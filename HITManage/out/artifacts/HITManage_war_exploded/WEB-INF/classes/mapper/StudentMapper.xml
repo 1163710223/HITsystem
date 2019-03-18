@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.shop.dao.StudentDao">
+	<!-- 查询所有学生的信息 -->
+	<select id="queryAllStudents" resultType="org.shop.pojo.Student">
+	select * from student_info 
+	</select>
+	<!-- 根据学号查询学生 -->
+	<select id="queryById" parameterType="String" resultType="org.shop.pojo.Student">
+	select * from student_info where id  = #{id}
+	</select>	
+	<!-- 增加学生的信息 -->
+	<insert id="addStudent">
+	insert into student_info(id,password,name,year,phonenum) values(#{id},#{password},#{name},#{year},#{phonenum})
+	</insert>
+	<!-- 删除学生的信息 -->
+	<delete id="deleteStudent">
+	delete from student_info where id = #{id}
+	</delete>
+	<!-- 修改学生的信息 -->
+	<update id="modifyStudent">
+	update student_info set password=#{password},name=#{name},year=#{year},phonenum=#{phonenum} 
+	where id =#{id}
+	</update>
+</mapper>

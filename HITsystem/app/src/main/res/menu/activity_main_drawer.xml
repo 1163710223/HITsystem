@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_selfmsg"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/nav_classmanage"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="课程管理" /><!--高数，线代，课程添加-->
+                                        <!--成绩查询，成绩添加，成绩修改，-->
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="课程论坛" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="待开发" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="课程论坛" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="待开发" />
+        </menu>
+    </item>
+
+</menu>

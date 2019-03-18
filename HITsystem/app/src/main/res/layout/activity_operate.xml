@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.zhang.hitsystem.Operate">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="这门课程"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/maininfo"
+                android:background="@drawable/qianlanse1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:text="成绩录入"
+                android:textSize="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maininfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp"
+                android:id="@+id/add"
+                android:background="@drawable/biankuang1"
+                android:onClick="add"/>
+
+            <TextView
+                android:text="成绩修改"
+                android:textSize="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:id="@+id/modify"
+                android:layout_below="@+id/add"
+                android:layout_alignLeft="@+id/query"
+                android:layout_alignStart="@+id/query"
+                android:background="@drawable/biankuang1"
+                android:onClick="modify"/>
+
+
+            <TextView
+                android:id="@+id/analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/query"
+                android:layout_alignStart="@+id/query"
+                android:layout_alignLeft="@+id/query"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/biankuang1"
+                android:text="成绩分析"
+                android:textSize="38dp"
+                android:onClick="analyze"/>
+
+            <TextView
+                android:text="成绩查询"
+                android:textSize="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:id="@+id/query"
+                android:background="@drawable/biankuang1"
+                android:layout_below="@+id/modify"
+                android:layout_alignLeft="@+id/add"
+                android:layout_alignStart="@+id/add"
+                android:onClick="query"/>
+
+            <TextView
+                android:text="删除课程"
+                android:textSize="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:id="@+id/delete"
+                android:background="@drawable/biankuang1"
+                android:layout_below="@+id/analyze"
+                android:layout_alignLeft="@+id/add"
+                android:layout_alignStart="@+id/add"
+                android:onClick="delete"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

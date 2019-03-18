@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACDiscuss">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/back3"
+        android:layout_height="match_parent">
+
+
+        <!---->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讨论话题"
+            android:id="@+id/tlht"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="40dp"
+            android:id="@+id/ht"
+            android:background="@drawable/biankuang3"
+            android:layout_below="@id/tlht"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="80dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discussTopic"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讨论区"
+            android:id="@+id/tl"
+            android:layout_below="@id/ht"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discusses"
+            android:layout_below="@id/tl"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_height="wrap_content"
+            ></android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/fasongkuang"
+            android:background="@color/colorgrey"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+             android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+            <EditText
+                android:layout_toLeftOf="@id/queding"
+                android:id="@+id/edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="800dip"/>
+            <Button
+                android:id="@+id/queding"
+                android:text="发送"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="senddis"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

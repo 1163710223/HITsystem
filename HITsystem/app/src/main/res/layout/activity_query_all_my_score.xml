@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.yeshenl.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="课程信息"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:id="@+id/maininfo"
+            android:background="@drawable/qianlanse1"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <GridLayout
+            android:layout_width="335dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/maininfo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/lessons"
+            android:columnCount="3"
+            android:rowCount="5">
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text=" 课程名称 "
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text=" 课程序号 "
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text=" 课程成绩 "
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text="111"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text=" 11 "
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="111dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignLeft="@+id/classlay"
+                android:layout_alignStart="@+id/classlay"
+                android:background="@drawable/biankuang1">
+                <TextView
+                    android:text=" 11 "
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </RelativeLayout>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

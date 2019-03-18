@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperateQuery">
+    <GridLayout
+        android:id="@+id/suibian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+        <RelativeLayout
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/biankuang1">
+            <TextView
+                android:text="学号"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/biankuang1">
+            <TextView
+                android:id="@+id/query_midle"
+                android:textSize="18dp"
+                android:text="姓名"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="@drawable/biankuang1">
+            <TextView
+                android:text="成绩"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RelativeLayout>
+    </GridLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/suibian"
+        android:id="@+id/student_score_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

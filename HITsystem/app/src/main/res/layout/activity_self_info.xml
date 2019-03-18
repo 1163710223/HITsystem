@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.zhang.hitsystem.SelfInfo">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <TextView
+        android:text="个人信息"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/maininfo"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/maininfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/namelay"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:text="姓名："
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"/>
+            <TextView
+                android:id="@+id/namecontent"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/idlay"
+            android:layout_below="@+id/namelay">
+
+            <TextView
+                android:text="学号："
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id"/>
+            <TextView
+                android:id="@+id/idcontent"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/classlay"
+            android:layout_below="@+id/idlay">
+
+            <TextView
+                android:text="入学年份："
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cclass"/>
+            <TextView
+                android:id="@+id/cclasscontent"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/cclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/classlay"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/phonenumlay"
+            android:layout_marginTop="25dp"
+            android:layout_alignBottom="@+id/photo">
+
+            <TextView
+                android:text="手机号："
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phonenum"/>
+            <TextView
+                android:id="@+id/phonenumcontent"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

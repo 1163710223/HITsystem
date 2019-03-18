@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back3"
+    tools:context="com.example.zhang.hitsystem.Operate">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="成绩分析"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:id="@+id/maininfo"
+            android:background="@drawable/qianlanse1"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/zhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maininfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="233dp"
+            android:background="@drawable/biankuang1"
+            android:text="分段人数分析图"
+            android:textSize="38dp" />
+
+        <TextView
+            android:id="@+id/yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="151dp"
+            android:background="@drawable/biankuang1"
+            android:text="分数比例分析图"
+            android:textSize="38dp" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

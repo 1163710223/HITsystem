@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+
+
+    tools:context=".TriDraw">
+
+    <TextView
+        android:text="成绩分析"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="@drawable/qianlanse1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+    <com.example.zhang.hitsystem.Tri
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhu"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
